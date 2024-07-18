@@ -5,38 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatrixFit</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.createElement('div');
-            menuButton.innerHTML = '&#9776;';
-            menuButton.style.fontSize = '2rem';
-            menuButton.style.cursor = 'pointer';
-            menuButton.style.display = 'none';
-            document.querySelector('header').appendChild(menuButton);
-
-            const nav = document.querySelector('nav');
-            menuButton.addEventListener('click', function () {
-                nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-            });
-
-            function handleResize() {
-                if (window.innerWidth <= 768) {
-                    nav.style.display = 'none';
-                    menuButton.style.display = 'block';
-                } else {
-                    nav.style.display = 'flex';
-                    menuButton.style.display = 'none';
-                }
-            }
-
-            window.addEventListener('resize', handleResize);
-            handleResize();
-        });
-    </script>
 </head>
 <body>
     <header>
         <h1>MatrixFit</h1>
+        <button class="menu-button">☰</button>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -47,7 +20,7 @@
         </nav>
     </header>
 
-    <section id="home" class="parallax home-section">
+    <section id="home" class="section parallax home-section">
         <div class="overlay">
             <h2>Welcome to MatrixFit</h2>
             <img src="img2.jpeg" alt="hero-image" class="responsive-image">
@@ -58,7 +31,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Nishant Bharadwaj</h2>
         <div class="about-images">
             <div class="image-container">
@@ -68,7 +41,6 @@
                 <img src="back_img.jpg" alt="second" class="about-image">
             </div>
         </div>
-        
         <p>Welcome to the next chapter of your fitness journey! I'm Nishant Bharadwaj, and I'm here to help you transform your dreams into reality. As a fitness influencer, dedicated trainer, knowledgeable nutritionist, and with a strong understanding of medicine, I bring a wealth of experience and passion to the table.</p>
         <p>From 18, I was captivated by the incredible potential of the human body. This fascination led me to dive deep into the world of fitness, exploring the realms of workouts, nutrition, and holistic wellness.</p>
         <p>As a professional athlete, my journey is marked by relentless hard work and dedication, culminating in prestigious achievements such as winning the Bronze in the Men's Physique category at the NPC Goa Bodybuilding competition and securing 4th place at the Pune Shree.</p>
@@ -81,78 +53,58 @@
                 <div class="service-item">
                     <img src="./services/diet.JPG" alt="Diet and Nutrition">
                     <h3>Diet and Nutrition</h3>
-                    <div class="service-info">
-                        <p>Expert guidance on meal plans and nutritional strategies tailored to your specific needs and goals.</p>
-                    </div>
+                    <p>Expert guidance on meal plans and nutritional strategies tailored to your specific needs and goals.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/med.JPG" alt="Medication">
                     <h3>Medication</h3>
-                    <div class="service-info">
-                        <p>Insightful advice on supplements and medications to support your fitness and health objectives.</p>
-                    </div>
+                    <p>Insightful advice on supplements and medications to support your fitness and health objectives.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/workout.JPG" alt="Training/Workout Program">
                     <h3>Training/Workout Program</h3>
-                    <div class="service-info">
-                        <p>Customized workout plans designed to maximize your results efficiently.</p>
-                    </div>
+                    <p>Customized workout plans designed to maximize your results efficiently.</p>
                 </div>
                 <div class="service-item">
                     <img src="services/PT.jpg" alt="Personal Training">
                     <h3>Personal Training</h3>
-                    <div class="service-info">
-                        <p>One-on-one training sessions focused on achieving your personal fitness targets.</p>
-                    </div>
+                    <p>One-on-one training sessions focused on achieving your personal fitness targets.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/TRANSFORM.jpeg" alt="Transformation">
                     <h3>Transformation</h3>
-                    <div class="service-info">
-                        <p>Comprehensive programs that include training, nutrition, and lifestyle changes to help you transform your body.</p>
-                    </div>
+                    <p>Comprehensive programs that include training, nutrition, and lifestyle changes to help you transform your body.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/elderly.JPG" alt="Healthy Lifestyle for Elderly">
                     <h3>Healthy Lifestyle for Elderly</h3>
-                    <div class="service-info">
-                        <p>Specialized programs aimed at promoting fitness and well-being for elderly clients.</p>
-                    </div>
+                    <p>Specialized programs aimed at promoting fitness and well-being for elderly clients.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/unisex.JPG" alt="Services for Both Men and Women">
                     <h3>Services for Both Men and Women</h3>
-                    <div class="service-info">
-                        <p>Tailored solutions that address the unique needs and goals of both male and female clients.</p>
-                    </div>
+                    <p>Tailored solutions that address the unique needs and goals of both male and female clients.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/fatloss.JPG" alt="Fat Loss Plans">
                     <h3>Fat Loss Plans</h3>
-                    <div class="service-info">
-                        <p>Effective strategies and programs designed to help you shed excess weight and achieve a lean physique.</p>
-                    </div>
+                    <p>Effective strategies and programs designed to help you shed excess weight and achieve a lean physique.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/muscle.jpg" alt="Muscle Gain Plans">
                     <h3>Muscle Gain Plans</h3>
-                    <div class="service-info">
-                        <p>Structured workout and nutrition plans focused on building muscle mass and strength.</p>
-                    </div>
+                    <p>Structured workout and nutrition plans focused on building muscle mass and strength.</p>
                 </div>
                 <div class="service-item">
                     <img src="./services/without.JPG" alt="Stay Fit Plans Without Gym and Hardcore Training">
                     <h3>Stay Fit Plans Without Gym and Hardcore Training</h3>
-                    <div class="service-info">
-                        <p>Innovative fitness routines that allow you to stay fit and healthy without the need for a gym or intense training sessions.</p>
-                    </div>
+                    <p>Innovative fitness routines that allow you to stay fit and healthy without the need for a gym or intense training sessions.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="contact" class="parallax contact-section">
+    
+    <section id="contact" class="section parallax contact-section">
         <div class="overlay">
             <h2>Contact Nishant</h2>
             <p>Mobile: +91 7378418005</p>
@@ -166,7 +118,18 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 MatrixFit. All rights reserved.</p>
+        <p>© 2024 MatrixFit. All rights reserved.</p>
     </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.menu-button');
+        const navUl = document.querySelector('nav ul');
+
+        menuButton.addEventListener('click', function() {
+            navUl.classList.toggle('active');
+        });
+    });
+    </script>
 </body>
 </html>
