@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>MatrixFit</title>
     <link rel="stylesheet" href="styles.css">
     <script>
@@ -46,6 +47,17 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="hero_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1 class="hero-quote">"BE DELUSIONAL"</h1>
+        </div>
+    </section>
 
     <section id="home" class="parallax home-section">
         <div class="overlay">
@@ -155,18 +167,18 @@
     <section id="contact" class="parallax contact-section">
         <div class="overlay">
             <h2>Contact Nishant</h2>
-            <p>Mobile: +91 7378418005</p>
-            <p>WhatsApp: +91 7378418005</p>
-            <p>Email: bhardwajnishant20001@gmail.com</p>
-            <p>Follow us on:</p>
-            <ul class="social-media">
-                <li><a href="https://www.instagram.com/ironnish?igsh=cHVuOXV3dHdhemFv&utm_source=qr">Instagram</a></li>
-            </ul>
+            <div class="contact-details">
+                <p><span class="contact-icon"><i class="fas fa-phone"></i></span> Mobile: +91 7378418005</p>
+                <p><span class="contact-icon"><i class="fab fa-whatsapp"></i></span> WhatsApp: +91 7378418005</p>
+                <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> Email: bhardwajnishant20001@gmail.com</p>
+                <p class="follow-us"><a href="https://www.instagram.com/ironnish?igsh=cHVuOXV3dHdhemFv&utm_source=qr"><i class="fab fa-instagram"></i> Instagram ( ironnish )</a></p>
+            </div>
         </div>
     </section>
+    
 
     <footer>
-        <p>&copy; 2024 MatrixFit. All rights reserved.</p>
+        <p>&copy; 2024 MatrixFit. Developed by Juned.</p>
     </footer>
 </body>
 </html>
