@@ -3,133 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatrixFit</title>
+    <title>MatrixFit - Your Path to Peak Fitness</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>MatrixFit</h1>
-        <button class="menu-button">☰</button>
         <nav>
+            <button class="menu-button" aria-label="Toggle menu">☰</button>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-dumbbell"></i> Services</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="section parallax home-section">
-        <div class="overlay">
-            <h2>Welcome to MatrixFit</h2>
-            <img src="img2.jpeg" alt="hero-image" class="responsive-image">
-            <p>Discover your path to peak fitness with MatrixFit, where we blend cutting-edge science with personalized training. Whether you're aiming to build strength, enhance flexibility, or improve overall wellness, our expert team is here to guide you through every step of your fitness journey.</p>
-            <p>Explore our state-of-the-art facilities, join dynamic group classes, or work one-on-one with our certified trainers to achieve your fitness goals efficiently and effectively. At MatrixFit, we believe in empowering you with the knowledge and tools to transform your health and lifestyle.</p>
-            <p>Join us today and experience the MatrixFit difference. Your journey to a stronger, healthier you starts here!</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <video id="hero-video" autoplay loop muted playsinline>
+                <source src="MicrosoftTeams-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay">
+                <h2 class="hero-quote">"BE DELUSIONAL"</h2>
+            </div>
+        </section>
 
-    <section id="about" class="section">
-        <h2>About Nishant Bharadwaj</h2>
-        <div class="about-images">
-            <div class="image-container">
-                <img src="front_img.jpg" alt="front" class="about-image">
+        <section id="home" class="parallax home-section">
+            <div class="overlay">
+                <h2><i class="fas fa-home"></i> Welcome to MatrixFit</h2>
+                <br>
+                <img src="img2.jpeg" alt="MatrixFit Facility" class="responsive-image">
+                <p>Discover your path to peak fitness with MatrixFit, where we blend cutting-edge science with personalized training. Whether you're aiming to build strength, enhance flexibility, or improve overall wellness, our expert team is here to guide you through every step of your fitness journey.</p>
+                <p>Explore our state-of-the-art facilities, join dynamic group classes, or work one-on-one with our certified trainers to achieve your fitness goals efficiently and effectively. At MatrixFit, we believe in empowering you with the knowledge and tools to transform your health and lifestyle.</p>
+                <p>Join us today and experience the MatrixFit difference. Your journey to a stronger, healthier you starts here!</p>
+                <a href="#contact" class="cta-button"><i class="fas fa-chevron-right"></i> Get in Touch</a>
             </div>
-            <div class="image-container">
-                <img src="back_img.jpg" alt="second" class="about-image">
-            </div>
-        </div>
-        <p>Welcome to the next chapter of your fitness journey! I'm Nishant Bharadwaj, and I'm here to help you transform your dreams into reality. As a fitness influencer, dedicated trainer, knowledgeable nutritionist, and with a strong understanding of medicine, I bring a wealth of experience and passion to the table.</p>
-        <p>From 18, I was captivated by the incredible potential of the human body. This fascination led me to dive deep into the world of fitness, exploring the realms of workouts, nutrition, and holistic wellness.</p>
-        <p>As a professional athlete, my journey is marked by relentless hard work and dedication, culminating in prestigious achievements such as winning the Bronze in the Men's Physique category at the NPC Goa Bodybuilding competition and securing 4th place at the Pune Shree.</p>
-    </section>
+        </section>
 
-    <section id="services" class="parallax services-section">
-        <div class="overlay">
-            <h2 style="text-align: center;">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="./services/diet.JPG" alt="Diet and Nutrition">
-                    <h3>Diet and Nutrition</h3>
-                    <p>Expert guidance on meal plans and nutritional strategies tailored to your specific needs and goals.</p>
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Nishant Bharadwaj</h2>
+            <br>
+            <div class="about-images">
+                <div class="image-container">
+                    <img src="front_img.jpg" alt="Nishant Bharadwaj Front" class="about-image">
                 </div>
-                <div class="service-item">
-                    <img src="./services/med.JPG" alt="Medication">
-                    <h3>Medication</h3>
-                    <p>Insightful advice on supplements and medications to support your fitness and health objectives.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/workout.JPG" alt="Training/Workout Program">
-                    <h3>Training/Workout Program</h3>
-                    <p>Customized workout plans designed to maximize your results efficiently.</p>
-                </div>
-                <div class="service-item">
-                    <img src="services/PT.jpg" alt="Personal Training">
-                    <h3>Personal Training</h3>
-                    <p>One-on-one training sessions focused on achieving your personal fitness targets.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/TRANSFORM.jpeg" alt="Transformation">
-                    <h3>Transformation</h3>
-                    <p>Comprehensive programs that include training, nutrition, and lifestyle changes to help you transform your body.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/elderly.JPG" alt="Healthy Lifestyle for Elderly">
-                    <h3>Healthy Lifestyle for Elderly</h3>
-                    <p>Specialized programs aimed at promoting fitness and well-being for elderly clients.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/unisex.JPG" alt="Services for Both Men and Women">
-                    <h3>Services for Both Men and Women</h3>
-                    <p>Tailored solutions that address the unique needs and goals of both male and female clients.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/fatloss.JPG" alt="Fat Loss Plans">
-                    <h3>Fat Loss Plans</h3>
-                    <p>Effective strategies and programs designed to help you shed excess weight and achieve a lean physique.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/muscle.jpg" alt="Muscle Gain Plans">
-                    <h3>Muscle Gain Plans</h3>
-                    <p>Structured workout and nutrition plans focused on building muscle mass and strength.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./services/without.JPG" alt="Stay Fit Plans Without Gym and Hardcore Training">
-                    <h3>Stay Fit Plans Without Gym and Hardcore Training</h3>
-                    <p>Innovative fitness routines that allow you to stay fit and healthy without the need for a gym or intense training sessions.</p>
+                <div class="image-container">
+                    <img src="back_img.jpg" alt="Nishant Bharadwaj Back" class="about-image">
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="section parallax contact-section">
-        <div class="overlay">
-            <h2>Contact Nishant</h2>
-            <p>Mobile: +91 7378418005</p>
-            <p>WhatsApp: +91 7378418005</p>
-            <p>Email: bhardwajnishant20001@gmail.com</p>
-            <p>Follow us on:</p>
-            <ul class="social-media">
-                <li><a href="https://www.instagram.com/ironnish?igsh=cHVuOXV3dHdhemFv&utm_source=qr">Instagram</a></li>
-            </ul>
-        </div>
-    </section>
+            <p>Welcome to the next chapter of your fitness journey! I'm Nishant Bharadwaj, and I'm here to help you transform your dreams into reality. As a fitness influencer, dedicated trainer, knowledgeable nutritionist, and with a strong understanding of medicine, I bring a wealth of experience and passion to the table.</p>
+            <p>From 18, I was captivated by the incredible potential of the human body. This fascination led me to dive deep into the world of fitness, exploring the realms of workouts, nutrition, and holistic wellness.</p>
+            <p>As a professional athlete, my journey is marked by relentless hard work and dedication, culminating in prestigious achievements such as winning the Bronze in the Men's Physique category at the NPC Goa Bodybuilding competition and securing 4th place at the Pune Shree.</p>
+        </section>
+
+        <section id="services" class="parallax services-section">
+            <div class="overlay">
+                <h2><i class="fas fa-dumbbell"></i> Our Services</h2>
+                <br>
+                <h3>Investing in your health and fitness is the highest ROI activity. It compounds and pays dividends in every area of your life.</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="./services/diet.JPG" alt="Diet and Nutrition">
+                        <h3>Diet and Nutrition</h3>
+                        <div class="service-info">
+                            <p>Expert guidance on meal plans and nutritional strategies tailored to your specific needs and goals.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/med.JPG" alt="Medication">
+                        <h3>Medication</h3>
+                        <div class="service-info">
+                            <p>Insightful advice on supplements and medications to support your fitness and health objectives.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/workout.JPG" alt="Training/Workout Program">
+                        <h3>Training/Workout Program</h3>
+                        <div class="service-info">
+                            <p>Customized workout plans designed to maximize your results efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="services/PT.jpg" alt="Personal Training">
+                        <h3>Personal Training</h3>
+                        <div class="service-info">
+                            <p>One-on-one training sessions focused on achieving your personal fitness targets.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/TRANSFORM.jpeg" alt="Transformation">
+                        <h3>Transformation</h3>
+                        <div class="service-info">
+                            <p>Comprehensive programs that include training, nutrition, and lifestyle changes to help you transform your body.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/elderly.JPG" alt="Healthy Lifestyle for Elderly">
+                        <h3>Healthy Lifestyle for Elderly</h3>
+                        <div class="service-info">
+                            <p>Specialized programs aimed at promoting fitness and well-being for elderly clients.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/unisex.JPG" alt="Services for Both Men and Women">
+                        <h3>Services for Both Men and Women</h3>
+                        <div class="service-info">
+                            <p>Tailored solutions that address the unique needs and goals of both male and female clients.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/fatloss.JPG" alt="Fat Loss Plans">
+                        <h3>Fat Loss Plans</h3>
+                        <div class="service-info">
+                            <p>Effective strategies and programs designed to help you shed excess weight and achieve a lean physique.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/muscle.jpg" alt="Muscle Gain Plans">
+                        <h3>Muscle Gain Plans</h3>
+                        <div class="service-info">
+                            <p>Structured workout and nutrition plans focused on building muscle mass and strength.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <img src="./services/without.JPG" alt="Stay Fit Plans Without Gym">
+                        <h3>Stay Fit Plans Without Gym</h3>
+                        <div class="service-info">
+                            <p>Innovative fitness routines that allow you to stay fit and healthy without the need for a gym or intense training sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="parallax contact-section">
+            <div class="overlay">
+                <h2>Contact Nishant</h2>
+                <div class="contact-details">
+                    <p><span class="contact-icon"><i class="fas fa-phone"></i></span> Mobile: +91 7378418005</p>
+                    <p><span class="contact-icon"><i class="fab fa-whatsapp"></i></span> WhatsApp: +91 7378418005</p>
+                    <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> Email: bhardwajnishant2001@gmail.com</p>
+                    <p class="follow-us"><a href="https://www.instagram.com/ironnish?igsh=cHVuOXV3dHdhemFv&utm_source=qr"><i class="fab fa-instagram"></i> Instagram ( ironnish )</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 MatrixFit. All rights reserved.</p>
+        <p>&copy; 2024 MatrixFit. Developed by Juned.</p>
     </footer>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuButton = document.querySelector('.menu-button');
-        const navUl = document.querySelector('nav ul');
-
-        menuButton.addEventListener('click', function() {
-            navUl.classList.toggle('active');
+        document.querySelector('.menu-button').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
         });
-    });
     </script>
 </body>
 </html>
