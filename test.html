@@ -31,6 +31,7 @@
                 <h2 class="hero-quote">"BE DELUSIONAL"</h2>
             </div>
         </section>
+        
 
         <section id="home" class="parallax home-section">
             <div class="overlay">
@@ -144,9 +145,9 @@
             <div class="overlay">
                 <h2>Contact Nishant</h2>
                 <div class="contact-details">
-                    <p><span class="contact-icon"><i class="fas fa-phone"></i></span> Mobile: +91 7378418005</p>
-                    <p><span class="contact-icon"><i class="fab fa-whatsapp"></i></span> WhatsApp: +91 7378418005</p>
-                    <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> Email: bhardwajnishant2001@gmail.com</p>
+                    <p><span class="contact-icon"><i class="fas fa-phone" style="color: inherit; text-decoration: none; margin-left: 5px;"></i></span> Mobile: +91 7378418005</p>
+                    <p><span class="contact-icon"><i class="fab fa-whatsapp" style="color: inherit; text-decoration: none; margin-left: 5px;"></i></span> WhatsApp: +91 7378418005</p>
+                    <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> Email: <a href="mailto:bharadwajnishant2001@gmail.com" style="color: inherit; text-decoration: none; margin-left: 5px;">bharadwajnishant2001@gmail.com</a></p>
                     <p class="follow-us"><a href="https://www.instagram.com/ironnish?igsh=cHVuOXV3dHdhemFv&utm_source=qr"><i class="fab fa-instagram"></i> Instagram ( ironnish )</a></p>
                 </div>
             </div>
@@ -154,12 +155,39 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 MatrixFit. Developed by Juned.</p>
+        <p>&copy; 2024 MatrixFit. Developed by <a href="https://www.linkedin.com/in/juned-inamdar-data-and-ai/" style="color: inherit; text-decoration: none; margin-left: 5px;">@juned inamdar</a>.</p>
     </footer>
 
     <script>
         document.querySelector('.menu-button').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const serviceItems = document.querySelectorAll('.service-item');
+
+            serviceItems.forEach(item => {
+                item.addEventListener('touchstart', function() {
+                    // Remove the hover class from all service items
+                    serviceItems.forEach(i => i.classList.remove('hover'));
+                    // Add the hover class to the touched item
+                    this.classList.add('hover');
+                });
+
+                item.addEventListener('touchend', function() {
+                    // Prevent the hover effect from disappearing immediately after touch ends
+                    setTimeout(() => {
+                        this.classList.remove('hover');
+                    }, 1000);
+                });
+            });
+
+            // Optional: Remove hover effect when touching outside of the items
+            document.addEventListener('touchstart', function(event) {
+                if (!event.target.closest('.service-item')) {
+                    serviceItems.forEach(i => i.classList.remove('hover'));
+                }
+            });
         });
     </script>
 </body>
