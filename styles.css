@@ -219,15 +219,18 @@ p {
     overflow: auto;
 }
 
-.service-item:hover img {
+.service-item:hover img,
+.service-item.hover img {
     filter: blur(3px);
 }
 
-.service-item:hover .service-info {
+.service-item:hover .service-info,
+.service-item.hover .service-info {
     opacity: 1;
 }
 
-.service-item:hover {
+.service-item:hover,
+.service-item.hover {
     transform: scale(1.05);
 }
 

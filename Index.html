@@ -161,6 +161,33 @@
         document.querySelector('.menu-button').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const serviceItems = document.querySelectorAll('.service-item');
+
+            serviceItems.forEach(item => {
+                item.addEventListener('touchstart', function() {
+                    // Remove the hover class from all service items
+                    serviceItems.forEach(i => i.classList.remove('hover'));
+                    // Add the hover class to the touched item
+                    this.classList.add('hover');
+                });
+
+                item.addEventListener('touchend', function() {
+                    // Prevent the hover effect from disappearing immediately after touch ends
+                    setTimeout(() => {
+                        this.classList.remove('hover');
+                    }, 1000);
+                });
+            });
+
+            // Optional: Remove hover effect when touching outside of the items
+            document.addEventListener('touchstart', function(event) {
+                if (!event.target.closest('.service-item')) {
+                    serviceItems.forEach(i => i.classList.remove('hover'));
+                }
+            });
+        });
     </script>
 </body>
 </html>
